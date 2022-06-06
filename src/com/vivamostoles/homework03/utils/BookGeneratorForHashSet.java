@@ -27,7 +27,8 @@ public class BookGeneratorForHashSet {
                     authorFirstName[randomValueOfFirstName], patronymicName[randomValueOfpatronymicName],
                     literaryWork[randomValueOfliteraryWork]);
             books.add(bookFromGenerator);
-            // System.out.println(books[i]);
+           // System.out.println(books);
         }
         return books;
+
 }}
