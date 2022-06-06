@@ -1,18 +1,15 @@
 package src.com.vivamostoles.homework03;
 
 import src.com.vivamostoles.homework03.service.LiteraryWorks;
-import src.com.vivamostoles.homework03.utils.BookGenerator;
-import src.com.vivamostoles.homework03.utils.BookGeneratorForHashSet;
-import src.com.vivamostoles.homework03.utils.RemoveBook;
-import src.com.vivamostoles.homework03.utils.UsingForToPrint;
+import src.com.vivamostoles.homework03.utils.*;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+      TreeSetCreator as = new TreeSetCreator();
+
+
     /*    List <Book> list = BookGenerator.generation(20);
          UsingForToPrint.usingFor(list);
       System.out.println("After using remove");
@@ -33,15 +30,18 @@ public class Main {
         books.add(equalBook5);
         books.add(equalBook6);
       //  UsingForToPrint.usingForHashSet(list);
-     // System.out.println(books.contains("e"));
-      for (Book book:books
+
+     /* for (Book book:books
            ) {
         String bookName = book.getLiteraryWork();
         Character firstLetter = bookName.charAt(0);
         if (letters.contains(firstLetter)) {
-          System.out.println(bookName);
+          System.out.println(bookName +" " + book.getAuthorLastName() + " " + book.getAuthorFirstName() + " " + book.getPatronymicName());
         }
-      }
+      }*/
+    //  List sortedList = new ArrayList(books);
+  /*  List <Book> sortedList = new ArrayList<Book>(books);
+      Collections.sort(sortedList);*/
 
 
 
