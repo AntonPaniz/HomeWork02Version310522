@@ -7,8 +7,11 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-      TreeSetCreator as = new TreeSetCreator();
 
+      TreeSet <String> students = TreeSetCreator.generation(28);
+      for (String stude : students){
+        System.out.println(stude);
+      }
 
     /*    List <Book> list = BookGenerator.generation(20);
          UsingForToPrint.usingFor(list);
