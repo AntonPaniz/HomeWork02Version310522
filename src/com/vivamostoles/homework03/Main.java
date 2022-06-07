@@ -12,6 +12,18 @@ public class Main {
       for (String stude : students){
         System.out.println(stude);
       }
+      Iterator iter = students.iterator();
+
+      for (int i = 0; i < 10; i++) {
+        while (iter.hasNext()) {
+          int next = Integer.parseInt(iter.next());
+          if (next % i == 0) {
+            // primes.remove(next); // concurrent modification exception!
+            iter.remove();
+          }
+        }
+      }
+      System.out.println(students);
 
     /*    List <Book> list = BookGenerator.generation(20);
          UsingForToPrint.usingFor(list);
