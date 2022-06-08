@@ -33,6 +33,18 @@ public class BookGeneratorForHashSet {
                             literaryWork[randomValueOfliteraryWork]));
                     }
         // System.out.println(books);}
+
+        for (int i = 0; i < numberOfDiffrentBooksToMake; i++) {
+            int randomValueOfLastName1 = new Random().nextInt(authorLastName.length);
+            int randomValueOfFirstName1 = new Random().nextInt(authorFirstName.length);
+            int randomValueOfpatronymicName1 = new Random().nextInt(patronymicName.length);
+            int randomValueOfliteraryWork1 = new Random().nextInt(LiteraryWorks.literaryWorks.length);
+            Book diffrentBooksFromGenerator = new Book(authorLastName[randomValueOfLastName1],
+                    authorFirstName[randomValueOfFirstName1], patronymicName[randomValueOfpatronymicName1],
+                    literaryWork[randomValueOfliteraryWork1]);
+            books.add(diffrentBooksFromGenerator);
+        }
+
         return books;
       /*  for (int i = 0; i < numberOfSameBooksToMake; i++) {
             Book sameBooksFromGenerator = new Book(authorLastName,
