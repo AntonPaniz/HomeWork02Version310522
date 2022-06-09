@@ -19,7 +19,7 @@ public class Main {
      // System.out.println("After using remove");
      //  RemoveBook.removeByIndex(6, list);
        //UsingForToPrint.usingFor(list);*/
-        HashSet<Book> books = (HashSet<Book>) BookGeneratorForHashSet.generation(27, 13);
+        HashSet<Book> books = (HashSet<Book>) BookGeneratorForHashSet.generation(5, 3);
        // Set<Character> letters = new HashSet<>(Arrays.asList('A', 'E', 'I', 'O', 'U', 'Y', 'a', 'e', 'i', 'o', 'u', 'y'));
         /*Book equalBook1 = new Book("Kupala", "Yanka", "Daminikavich", "Paulinka");
         Book equalBook2 = new Book("Kupal", "Yank", "Daminikavic", "Paulinka");
@@ -45,6 +45,8 @@ public class Main {
         {System.out.println("checking>>>" + versionOfBooks);}
         SortedBook.sortBooks(books, Bookfields.NAME);
         SortedBook.sortBooks(books,Bookfields.FIRSTNAME);
+        SortedBook.sortBooks(books,Bookfields.PATRONUMIC);
+        SortedBook.sortBooks(books, Bookfields.LITERARYWORK);
 
      //From here Sergei version
        /* Set <Book> bookSortedByFirstName = SortedBook.booksorting(books, "FirstName");
