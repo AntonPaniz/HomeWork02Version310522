@@ -8,18 +8,21 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-
-    /*  TreeSet <String> students = TreeSetCreator.generation(28);
+    TreeSet <String> students = TreeSetCreator.generation(7);
       for (String stude : students){
-        System.out.println(stude); }
-      System.out.println(students);*/
+        System.out.println("after creat  " + stude); }
+      TreeSetCreator.deleteStudent(students);
+        /*for (String stude : students){
+            System.out.println("after remove  " + stude); }*/
+
+     // System.out.println(students);
 
  /*    List <Book> list = BookGenerator.generation(3);
       UsingForToPrint.usingFor(list);
      // System.out.println("After using remove");
      //  RemoveBook.removeByIndex(6, list);
        //UsingForToPrint.usingFor(list);*/
-        HashSet<Book> books = (HashSet<Book>) BookGeneratorForHashSet.generation(5, 3);
+        HashSet<Book> books = (HashSet<Book>) BookGeneratorForHashSet.generation(3, 1);
        // Set<Character> letters = new HashSet<>(Arrays.asList('A', 'E', 'I', 'O', 'U', 'Y', 'a', 'e', 'i', 'o', 'u', 'y'));
         /*Book equalBook1 = new Book("Kupala", "Yanka", "Daminikavich", "Paulinka");
         Book equalBook2 = new Book("Kupal", "Yank", "Daminikavic", "Paulinka");
