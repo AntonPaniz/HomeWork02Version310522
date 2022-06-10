@@ -27,12 +27,13 @@ public class TreeSetCreator {
         List <String> studentToRemove = new ArrayList<>();
         int countCheck = 1;
         for (String checkingStudent: students
-             ) {if(countCheck % 2 == 0){
-                System.out.println(checkingStudent);} else {
+             ){if(countCheck % 2 == 0){
+                System.out.println("Students after delete>>" + checkingStudent);} else {
                 studentToRemove.add(checkingStudent);      }
             countCheck ++;
         }
         students.removeAll(studentToRemove);
+
     }
 }
 

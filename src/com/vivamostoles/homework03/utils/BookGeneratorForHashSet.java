@@ -53,5 +53,18 @@ public class BookGeneratorForHashSet {
             books.add(sameBooksFromGenerator);*/
 
         }
+        public static Set <Book>  removeByLetterMenaning( Set<Book> books) {
+                  Set<Character> letters = new HashSet<>(Arrays.asList('A', 'E', 'I', 'O', 'U', 'Y', 'a', 'e', 'i', 'o', 'u', 'y'));
+            for (Book book : books) {
+                String bookName = book.getLiteraryWork();
+                Character firstLetter = bookName.charAt(0);
+                if (letters.contains(firstLetter)) {
+                    System.out.println("Solution task about Vowelletter>> " + bookName + " "
+                            + book.getAuthorLastName() + " " + book.getAuthorFirstName() + " " + book.getPatronymicName());
+                }
+            }
+         return books;
+    }
+
     }
 
