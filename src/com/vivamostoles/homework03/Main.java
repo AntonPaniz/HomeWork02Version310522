@@ -11,7 +11,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
       //Solution part 01 of the task
-     List <Book> list = BookGenerator.generation(20);
+    /* List <Book> list = BookGenerator.generation(20);
       UsingForToPrint.usingFor(list);
       System.out.println("After using remove");
       RemoveBook.removeByIndex(6, list);
@@ -38,8 +38,8 @@ public class Main {
 
              // Solution, part of P.S. task
        BookGenerator.creatingRandomLine(4);
-       BookGenerator.getLineFromArray(AuthorLastNamesList.lastNames);
-
+       BookGenerator.getLineFromArray(AuthorLastNamesList.lastNames);*/
+     UserGeneration.generation(4);
     }
 }
 
